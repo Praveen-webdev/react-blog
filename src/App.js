@@ -10,12 +10,8 @@ export default function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" exact>
-            <Post />
-          </Route>
-          <Route path="/createpost">
-            <CreatePost />
-          </Route>
+          <Route path="/" component={Post} exact/>
+          <Route path="/createpost" component={CreatePost}/>
         </Switch>
       </div>
     </Router>
