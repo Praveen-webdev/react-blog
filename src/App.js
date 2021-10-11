@@ -12,7 +12,7 @@ export default function App() {
       <ScrollRestoration />
       <Header />
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <Post />
         </Route>
         <Route path="/createpost">
